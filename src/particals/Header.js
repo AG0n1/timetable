@@ -6,7 +6,7 @@ function Header() {
       </div>
 
       <div className="enter">
-        <a href="#""> Войти </a>
+        <a href="#"> Войти </a>
       </div>
     </header>
   );
