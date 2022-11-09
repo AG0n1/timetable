@@ -59,6 +59,7 @@ a {
 
 	width: 100%;
 	height: 90vh;
+    min-height: 770px;
 
 	background: #ededed;
 
@@ -77,11 +78,30 @@ a {
 
 .pair1 {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 120px;
+	width: 720px;
 	height: 50%;
 
+}
+.pair1 > svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.pair1 > ul {
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.pair1 > ul > li {
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .list {
@@ -109,25 +129,7 @@ a {
     animation-duration: .5s;
     animation-iteration-count: 1;
 }
-/*
-@keyframes show {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 400px;
-    }
-}
 
-@keyframes hide {
-    0% {
-        width: 400px;
-    }
-    100% {
-        width: 0px;
-    }
-}
-*/
 .group-name {
     display: flex;
     justify-content: center;
@@ -143,10 +145,33 @@ a {
 .pair2 {
 	display: flex;
 	justify-content: space-between;
-	width: 100px;
-	height: 50%;
+	width: 280px;
+	height: 40px;
+}
 
-	border: 1px solid;
+.create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background: blue;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    border: 0px;
+    outline: none;
+}
+
+.settings-pair2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
 }
 
 .main-table {
@@ -155,6 +180,7 @@ a {
 
 	width: 90%;
 	height: 70vh;
+    min-height: 650px;
 
 	margin: 0 auto;
 }
@@ -164,7 +190,7 @@ a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-  height: 650px;
+    height: 650px;
 	width: 75%;
 }
 
@@ -172,7 +198,6 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 200px;
-
 
 	width: 32%;
 	border-radius: 10px;
