@@ -1,4 +1,4 @@
-function subjectTeacher {
+function SubjectTeacher() {
     const teachers = [
         {
             id: 1,
@@ -12,7 +12,7 @@ function subjectTeacher {
         
         {
             id: 3,
-            name "Мацулевич Е.И.",
+            name: "Мацулевич Е.И.",
         },
         
         {
@@ -22,13 +22,11 @@ function subjectTeacher {
     ]
 
     return (
-        <div className="teacherArea" key = 3 value = {teachers.id}>
-            {
-                teachers.name;
-            }
+        <div className="subjectInfoElem teacher">
+            Марзан С.А.
         </div>
     )
     
 }
 
-return default subjectTeacher
+export default SubjectTeacher

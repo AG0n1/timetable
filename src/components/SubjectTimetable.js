@@ -1,4 +1,7 @@
-import subjectTeacher from 'src/subjectInfo/subjectTeacher'
+import SubjectTeacher from '../subjectInfo/SubjectTeacher'
+import SubjectAuditorium from '../subjectInfo/SubjectAuditorium'
+import SubjectType from '../subjectInfo/SubjectType'
+import SubjectSubgroup from '../subjectInfo/SubjectSubgroup'
 
 function SubjectTimetable() {
 
@@ -37,7 +40,7 @@ function SubjectTimetable() {
             id: 7,
             name: 'Алгоритмы и структуры данных'
         }
-  ]
+    ]
 
     return ( 
     <div> 
@@ -45,13 +48,19 @@ function SubjectTimetable() {
             groups
             .map((group, index) => {
                 return <div className = "subject" >
-                            <div className = "subjectName"
+                            <div 
+                             className = "subjectName"
                              key = { index }
-                             value = { group.id }> { group.name } 
+                             value = { group.id }
+                            > 
+                                 { group.name } 
                             </div>
                             
-                            <div class="subjectInfo">
-                                <subjectTeacher />
+                            <div className ="subjectInfo">
+                                <SubjectTeacher />
+                                <SubjectAuditorium />
+                                <SubjectType />
+                                <SubjectSubgroup />
                             </div>
                         </div>
             })

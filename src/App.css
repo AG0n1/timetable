@@ -58,8 +58,7 @@ a {
 	justify-content: center;
 
 	width: 100%;
-	height: 90vh;
-    min-height: 770px;
+	min-height: 90vh;
 
 	background: #ededed;
 
@@ -100,7 +99,7 @@ a {
     cursor: pointer;
     font-size: 18px;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
 }
 
@@ -179,7 +178,7 @@ a {
 	justify-content: space-between;
 
 	width: 90%;
-	height: 70vh;
+	min-height: 70vh;
     min-height: 650px;
 
 	margin: 0 auto;
@@ -232,11 +231,20 @@ a {
 
 /* Table to Drag */
 
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 56vh;
+    width: 23%;
+}
+
 .table-work {
 	display: flex;
 	flex-direction: column;
 
-	width: 23%;
+	width: 100%;
 	height: 50vh;
     overflow-y: auto;
     
@@ -246,13 +254,44 @@ a {
 	border: 1px solid #666;
 }
 
+.createSubject {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;
+    height: 40px;
+    
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+    cursor: pointer;
+}
+
+.createSubject > svg {
+    width: 20px; 
+}
+
+.create-hide {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 30vh;
+    
+    border: 1px solid;
+}
+
 .subject {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
     min-height: 7vw;
-    border: 1px solid;
+    border-bottom: 1px solid;
     margin-top: 10px;
     
     font-size: 1.2vw;
@@ -270,20 +309,24 @@ a {
     justify-content: space-between;
     
     min-height: 2vw;
-    width: 80%;
+    width: 90%;
     
     margin: 0 auto;
 }
 
-.teacherArea {
+.subjectInfoElem {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
     
-    height: 50%;
-    width: 20%;
+    height: 20px;
     
-    background: #9e9e9e;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    
+    background: #bfbfbf;
 }
 
 .search {
